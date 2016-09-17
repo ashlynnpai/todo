@@ -7,16 +7,22 @@
 
   
   <section class="main">
-    <h1>date</h1>
+    <span class="date">
+      <span class="date-number"><%= Date.today.strftime("%d") %></span>
+      <span class="month">
+        <%= Date.today.strftime("%b").upcase %>
+        </br>
+        <%= Date.today.strftime("%Y") %>
+      </span>
+
+      <span class="day"><%= Date.today.strftime("%A").upcase %></span>
+    </span>     
+     
     <ul class="todo-list">
 
     </ul>
-  </section>
+  
 </section>
 
 
-<section class="author">
-  A <%= link_to "todo-mvc", "http://todomvc.com" %>
-  application, built by
-  <%= link_to "Ashlynn Pai", "http://github.com/" %>
-</section>
+
