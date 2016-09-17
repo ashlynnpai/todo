@@ -50,7 +50,7 @@ input[type="checkbox"] {
 .date {
   margin-left: 50px;
   display: block;
-  line-height: 1.2;
+  line-height: 1.3;
 
 }
 
@@ -88,23 +88,31 @@ input[type="checkbox"] {
   /*allow icon to be positioned on border */
   position: relative;
   min-height: 600px;
-  width: 400px;
+  max-width: 600px;
 }
 
-.todoapp:after{
-  content: '';
+
+.add-button {
   position: absolute;
-  top: 100%;
-  left: 50%;
-  width: 100px;
-  height: 100px;
-/* JRAOUI Chihab https://chihabjraoui.com/ Free for commercial use */
-  background-image: url('data:image/svg+xml;utf8,<svg enable-background="new 0 0 512 512" id="Layer_1" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Layer_1_1_"><path d="M494,256c0,131.4-106.6,238-238,238S18,387.4,18,256S124.6,18,256,18S494,124.6,494,256z" fill="#50E3A4"/></g><g id="Layer_2"><g><line fill="none" stroke="#46BE8B" stroke-linecap="round" stroke-miterlimit="10" stroke-width="16" x1="256" x2="256" y1="146" y2="374"/><line fill="none" stroke="#46BE8B" stroke-linecap="round" stroke-miterlimit="10" stroke-width="16" x1="150.5" x2="361.5" y1="260" y2="260"/></g></g></svg>');
-  background-size: cover;
-  background-repeat: no-repeat;
-  transform: translate(-50%, -50%);
-  border-top: inherit;
-  border-top-color: transparent;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  
+  >button{
+    position: relative;
+    min-height: 100px;
+    margin: 0 auto;
+    z-index: 10;
+    width: 100px;
+    height: 100px;
+    /* JRAOUI Chihab https://chihabjraoui.com/ Free for commercial use */
+    background-image: url('data:image/svg+xml;utf8,<svg enable-background="new 0 0 512 512" id="Layer_1" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Layer_1_1_"><path d="M494,256c0,131.4-106.6,238-238,238S18,387.4,18,256S124.6,18,256,18S494,124.6,494,256z" fill="#50E3A4"/></g><g id="Layer_2"><g><line fill="none" stroke="#46BE8B" stroke-linecap="round" stroke-miterlimit="10" stroke-width="16" x1="256" x2="256" y1="146" y2="374"/><line fill="none" stroke="#46BE8B" stroke-linecap="round" stroke-miterlimit="10" stroke-width="16" x1="150.5" x2="361.5" y1="260" y2="260"/></g></g></svg>');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: inherit;
+    border-top-color: transparent;
+    display: block;
+  }
 }
 
 .todoapp input::-webkit-input-placeholder {
